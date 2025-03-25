@@ -16,46 +16,487 @@
   </head>
   <body>
     <header class="header">
-      <div class="wrapper-header">
-        <div class="logo">
-          <img src="assets/Airbnb_Logo_Bélo.svg.png" alt="logo" width="100px" />
-        </div>
-        <nav class="nav">
-          <a href="#">Acomodações</a>
-          <a href="#">Experiências</a>
-        </nav>
-        <div class="navbar">
-          <div class="navbar-right">
-            <a href="#">Anuncie seu espaço no Airbnb</a>
+      <div class="container-header">
+        <div class="wrapper-header">
+          <div class="logo">
+            <img src="assets/Airbnb_Logo_Bélo.svg.png" alt="logo" width="100px" />
+          </div>
+          <nav class="nav">
+            <a href="#">Acomodações</a>
+            <a href="#" id="exper">Experiências</a>
+          </nav>
+          <div class="profile">
+            <p id="espaco">Anuncie seu espaço no Airbnb</p>
             <i class="fa-solid fa-globe"></i>
-            <div class="profile">
-              <i class="fas fa-bars"></i>
-              <i class="fas fa-user-circle"></i>
+            <div class="user">
+              <i id="bar" class="fa-solid fa-bars"></i>
+              <i id="user" class="fa-solid fa-circle-user"></i>
+            </div>
+          </div>
+        </div> 
+          
+        <div class="search-bar">
+          <div class="barra">
+            <div class="item-first">
+              <div class="buscar-itens">
+                <p id="first">Onde</p>
+                <input type="text" placeholder="Buscar destinos" />
+              </div>
+            </div>
+  
+            <div class="item">
+              <div class="buscar-itens">
+                <p id="second">Check-in</p>
+                <input id="data" type="text" placeholder="Insira as datas" />
+              </div>
+            </div>
+  
+            <div class="item">
+              <div class="buscar-itens">
+                <p id="second">Checkout</p>
+                <input id="data" type="text" placeholder="Insira as datas" />
+              </div>
+            </div>
+  
+            <div class="item-final">
+              <div class="buscar-itens">
+                <p id="first">Quem</p>
+                <input type="text" placeholder="Hospedes?" />
+              </div>
+            </div>
+  
+            <div class="item-final-lupa">
+              <div class="lupa">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
             </div>
           </div>
         </div>
-        <div class="search-bar">
-          <div>
-            <p id="where">Onde</p>
-            <input type="text" placeholder="Buscar destinos" />
-          </div>
-          <div>
-            <p>Check-in</p>
-            <input type="text" placeholder="Insira as datas" />
-          </div>
-          <div>
-            <p>Checkout</p>
-            <input type="text" placeholder="Insira as datas" />
-          </div>
-          <div>
-            <p>Quem</p>
-            <input type="text" placeholder="Hóspedes?" />
-          </div>
-          <button class="search-button">
-            <i class="fas fa-search"></i>
-          </button>
-        </div>
       </div>
     </header>
+
+    <main>
+      <section>
+        <div class="lugares">
+          <div class="icons--lugares">
+            <div class="lugares--div">
+              <img src="https://a0.muscache.com/pictures/3fb523a0-b622-4368-8142-b5e03df7549b.jpg" alt="" width="27px">
+              <p>Piscinas incríveis</p>
+            </div>
+
+            <div class="lugares--div">
+              <img id="icon--50" src="https://a0.muscache.com/im/pictures/mediaverse/category_icon/original/3e5243c8-4d15-4c6b-97e3-7ba2bb7bb880.png" alt="" width="27px">
+              <p id="no--border">Iconicos</p>
+            </div>
+
+            <div class="lugares--div">
+              <img id="icon--50" src="https://a0.muscache.com/pictures/6ad4bd95-f086-437d-97e3-14d12155ddfe.jpg" alt="" width="27px">
+              <p id="no--border">No interior</p>
+            </div>
+
+            <div class="lugares--div">
+              <img id="icon--50" src="https://a0.muscache.com/pictures/aaa02c2d-9f0d-4c41-878a-68c12ec6c6bd.jpg" alt="" width="27px">
+              <p id="no--border">Fazendas</p>
+            </div>
+
+            <div class="lugares--div">
+              <img id="icon--50" src="https://a0.muscache.com/pictures/9a2ca4df-ee90-4063-b15d-0de7e4ce210a.jpg" alt="" width="27px">
+              <p id="no--border">Energia alternativa</p>
+            </div>
+
+            <div class="lugares--div">
+              <img id="icon--50" src="https://a0.muscache.com/pictures/c0a24c04-ce1f-490c-833f-987613930eca.jpg" alt="" width="27px">
+              <p id="no--border">Parques nacionais</p>
+            </div>
+
+            <div class="lugares--div">
+              <img id="icon--50" src="https://a0.muscache.com/pictures/732edad8-3ae0-49a8-a451-29a8010dcc0c.jpg" alt="" width="27px">
+              <p id="no--border">Chalés</p>
+            </div>
+
+            <div class="lugares--div">
+              <img id="icon--50" src="https://a0.muscache.com/pictures/3b1eb541-46d9-4bef-abc4-c37d77e3c21b.jpg" alt="" width="27px">
+              <p id="no--border">Vistas incríveis</p>
+            </div>
+
+            <div class="lugares--div">
+              <img id="icon--50" src="https://a0.muscache.com/pictures/bcd1adc0-5cee-4d7a-85ec-f6730b0f8d0c.jpg" alt="" width="27px">
+              <p id="no--border">Em frente à praia</p>
+            </div>
+
+            <div class="lugares--div" id="pousadas">
+              <img id="icon--50" src="https://a0.muscache.com/pictures/5ed8f7c7-2e1f-43a8-9a39-4edfc81a3325.jpg" alt="" width="27px">
+              <p id="no--border">Pousadas</p>
+            </div>
+
+            <!-- <div class="lugares--div">
+              <img id="icon--50" src="https://a0.muscache.com/pictures/bcd1adc0-5cee-4d7a-85ec-f6730b0f8d0c.jpg" alt="" width="27px">
+              <p id="no--border">Na beira do lago</p>
+            </div> -->
+
+            <div class="divs--options">
+              <div class="arrow">
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+  
+              <div class="filtros">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 3; overflow: visible;"><path fill="none" d="M7 16H3m26 0H15M29 6h-4m-8 0H3m26 20h-4M7 16a4 4 0 1 0 8 0 4 4 0 0 0-8 0zM17 6a4 4 0 1 0 8 0 4 4 0 0 0-8 0zm0 20a4 4 0 1 0 8 0 4 4 0 0 0-8 0zm0 0H3"></path></svg>
+                <p>Filtros</p>
+              </div>
+
+              <div class="impostos">
+                <p>Exibir o total sem impostos</p>
+                <input type="radio" />
+              </div>
+            </div>
+          </div>
+
+          <div class="accommodations-grid">
+            <div class="accommodation-card">
+                <div class="preferred-badge">🏆 Preferido dos hóspedes</div>
+                <div class="heart-icon">❤️</div>
+                <img src="https://a0.muscache.com/im/pictures/c5c91e15-b0e8-41c0-92e5-ddb26f08b30b.jpg?im_w=720" alt="Accommodation">
+                <div class="accommodation-info">
+                    <div class="location">Balneário Camboriú, Brasil</div>
+                    <div class="details">
+                        <div class="desc">
+                          <span>19km de distância</span>
+                          <span>5-10 de mai</span>
+                        </div>
+                        <div>
+                          <i class="fa-solid fa-star"></i>
+                          <span>5,0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="accommodation-card">
+                <div class="preferred-badge">🏆 Preferido dos hóspedes</div>
+                <div class="heart-icon">❤️</div>
+                <img src="https://a0.muscache.com/im/pictures/miso/Hosting-569830940692995329/original/aadb19ea-969f-4365-800f-827a3f1af3f6.jpeg?im_w=720" alt="Accommodation">
+                <div class="accommodation-info">
+                    <div class="location">Pioneiros, Brasil</div>
+                    <div class="details">
+                        <div class="desc">
+                          <span>19km de distância</span>
+                          <span>5-10 de mai</span>
+                        </div>
+                        <div>
+                          <i class="fa-solid fa-star"></i>
+                          <span>5,0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="accommodation-card">
+                <div class="preferred-badge">🏆 Preferido dos hóspedes</div>
+                <div class="heart-icon">❤️</div>
+                <img src="https://a0.muscache.com/im/pictures/hosting/Hosting-1311006026436033813/original/632be0ce-36d3-4391-88d9-4f6c03b6a083.jpeg?im_w=720" alt="Accommodation">
+                <div class="accommodation-info">
+                    <div class="location">Bombinhas, Brasil</div>
+                    <div class="details">
+                        <div class="desc">
+                          <span>19km de distância</span>
+                          <span>5-10 de mai</span>
+                        </div>
+                        <div>
+                          <i class="fa-solid fa-star"></i>
+                          <span>5,0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accommodation-card">
+                <div class="preferred-badge">🏆 Preferido dos hóspedes</div>
+                <div class="heart-icon">❤️</div>
+                <img src="https://a0.muscache.com/im/pictures/311b7e4b-e68b-4f48-9e0e-6681f890e308.jpg?im_w=720" alt="Accommodation">
+                <div class="accommodation-info">
+                    <div class="location">Gravatá, Brasil</div>
+                    <div class="details">
+                        <div class="desc">
+                          <span>19km de distância</span>
+                          <span>5-10 de mai</span>
+                        </div>
+                        <div>
+                          <i class="fa-solid fa-star"></i>
+                          <span>5,0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accommodation-card">
+                <div class="preferred-badge">🏆 Preferido dos hóspedes</div>
+                <div class="heart-icon">❤️</div>
+                <img src="https://a0.muscache.com/im/pictures/airflow/Hosting-1343741137887097075/original/8afbfc63-afbc-4c59-bafa-32779d0e7e4a.jpg?im_w=720" alt="Accommodation">
+                <div class="accommodation-info">
+                    <div class="location">Penha, Brasil</div>
+                    <div class="details">
+                        <div class="desc">
+                          <span>19km de distância</span>
+                          <span>5-10 de mai</span>
+                        </div>
+                        <div>
+                          <i class="fa-solid fa-star"></i>
+                          <span>5,0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accommodation-card">
+                <div class="preferred-badge">🏆 Preferido dos hóspedes</div>
+                <div class="heart-icon">❤️</div>
+                <img src="https://a0.muscache.com/im/pictures/928b1af1-abae-4315-aeb1-eaa887747137.jpg?im_w=720" alt="Accommodation">
+                <div class="accommodation-info">
+                    <div class="location">Praia Brava, Brasil</div>
+                    <div class="details">
+                        <div class="desc">
+                          <span>19km de distância</span>
+                          <span>5-10 de mai</span>
+                        </div>
+                        <div>
+                          <i class="fa-solid fa-star"></i>
+                          <span>5,0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accommodation-card">
+              <div class="preferred-badge">🏆 Preferido dos hóspedes</div>
+              <div class="heart-icon">❤️</div>
+              <img src="https://a0.muscache.com/im/pictures/c5c91e15-b0e8-41c0-92e5-ddb26f08b30b.jpg?im_w=720" alt="Accommodation">
+              <div class="accommodation-info">
+                  <div class="location">Balneário Camboriú, Brasil</div>
+                  <div class="details">
+                      <div class="desc">
+                        <span>19km de distância</span>
+                        <span>5-10 de mai</span>
+                      </div>
+                      <div>
+                        <i class="fa-solid fa-star"></i>
+                        <span>5,0</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+  
+          <div class="accommodation-card">
+              <div class="preferred-badge">🏆 Preferido dos hóspedes</div>
+              <div class="heart-icon">❤️</div>
+              <img src="https://a0.muscache.com/im/pictures/miso/Hosting-569830940692995329/original/aadb19ea-969f-4365-800f-827a3f1af3f6.jpeg?im_w=720" alt="Accommodation">
+              <div class="accommodation-info">
+                  <div class="location">Pioneiros, Brasil</div>
+                  <div class="details">
+                      <div class="desc">
+                        <span>19km de distância</span>
+                        <span>5-10 de mai</span>
+                      </div>
+                      <div>
+                        <i class="fa-solid fa-star"></i>
+                        <span>5,0</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+  
+          <div class="accommodation-card">
+              <div class="preferred-badge">🏆 Preferido dos hóspedes</div>
+              <div class="heart-icon">❤️</div>
+              <img src="https://a0.muscache.com/im/pictures/hosting/Hosting-1311006026436033813/original/632be0ce-36d3-4391-88d9-4f6c03b6a083.jpeg?im_w=720" alt="Accommodation">
+              <div class="accommodation-info">
+                  <div class="location">Bombinhas, Brasil</div>
+                  <div class="details">
+                      <div class="desc">
+                        <span>19km de distância</span>
+                        <span>5-10 de mai</span>
+                      </div>
+                      <div>
+                        <i class="fa-solid fa-star"></i>
+                        <span>5,0</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="accommodation-card">
+              <div class="preferred-badge">🏆 Preferido dos hóspedes</div>
+              <div class="heart-icon">❤️</div>
+              <img src="https://a0.muscache.com/im/pictures/311b7e4b-e68b-4f48-9e0e-6681f890e308.jpg?im_w=720" alt="Accommodation">
+              <div class="accommodation-info">
+                  <div class="location">Gravatá, Brasil</div>
+                  <div class="details">
+                      <div class="desc">
+                        <span>19km de distância</span>
+                        <span>5-10 de mai</span>
+                      </div>
+                      <div>
+                        <i class="fa-solid fa-star"></i>
+                        <span>5,0</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="accommodation-card">
+              <div class="preferred-badge">🏆 Preferido dos hóspedes</div>
+              <div class="heart-icon">❤️</div>
+              <img src="https://a0.muscache.com/im/pictures/airflow/Hosting-1343741137887097075/original/8afbfc63-afbc-4c59-bafa-32779d0e7e4a.jpg?im_w=720" alt="Accommodation">
+              <div class="accommodation-info">
+                  <div class="location">Penha, Brasil</div>
+                  <div class="details">
+                      <div class="desc">
+                        <span>19km de distância</span>
+                        <span>5-10 de mai</span>
+                      </div>
+                      <div>
+                        <i class="fa-solid fa-star"></i>
+                        <span>5,0</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="accommodation-card">
+              <div class="preferred-badge">🏆 Preferido dos hóspedes</div>
+              <div class="heart-icon">❤️</div>
+              <img src="https://a0.muscache.com/im/pictures/928b1af1-abae-4315-aeb1-eaa887747137.jpg?im_w=720" alt="Accommodation">
+              <div class="accommodation-info">
+                  <div class="location">Praia Brava, Brasil</div>
+                  <div class="details">
+                      <div class="desc">
+                        <span>19km de distância</span>
+                        <span>5-10 de mai</span>
+                      </div>
+                      <div>
+                        <i class="fa-solid fa-star"></i>
+                        <span>5,0</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="accommodation-card">
+            <div class="preferred-badge">🏆 Preferido dos hóspedes</div>
+            <div class="heart-icon">❤️</div>
+            <img src="https://a0.muscache.com/im/pictures/c5c91e15-b0e8-41c0-92e5-ddb26f08b30b.jpg?im_w=720" alt="Accommodation">
+            <div class="accommodation-info">
+                <div class="location">Balneário Camboriú, Brasil</div>
+                <div class="details">
+                    <div class="desc">
+                      <span>19km de distância</span>
+                      <span>5-10 de mai</span>
+                    </div>
+                    <div>
+                      <i class="fa-solid fa-star"></i>
+                      <span>5,0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="accommodation-card">
+            <div class="preferred-badge">🏆 Preferido dos hóspedes</div>
+            <div class="heart-icon">❤️</div>
+            <img src="https://a0.muscache.com/im/pictures/miso/Hosting-569830940692995329/original/aadb19ea-969f-4365-800f-827a3f1af3f6.jpeg?im_w=720" alt="Accommodation">
+            <div class="accommodation-info">
+                <div class="location">Pioneiros, Brasil</div>
+                <div class="details">
+                    <div class="desc">
+                      <span>19km de distância</span>
+                      <span>5-10 de mai</span>
+                    </div>
+                    <div>
+                      <i class="fa-solid fa-star"></i>
+                      <span>5,0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="accommodation-card">
+            <div class="preferred-badge">🏆 Preferido dos hóspedes</div>
+            <div class="heart-icon">❤️</div>
+            <img src="https://a0.muscache.com/im/pictures/hosting/Hosting-1311006026436033813/original/632be0ce-36d3-4391-88d9-4f6c03b6a083.jpeg?im_w=720" alt="Accommodation">
+            <div class="accommodation-info">
+                <div class="location">Bombinhas, Brasil</div>
+                <div class="details">
+                    <div class="desc">
+                      <span>19km de distância</span>
+                      <span>5-10 de mai</span>
+                    </div>
+                    <div>
+                      <i class="fa-solid fa-star"></i>
+                      <span>5,0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="accommodation-card">
+            <div class="preferred-badge">🏆 Preferido dos hóspedes</div>
+            <div class="heart-icon">❤️</div>
+            <img src="https://a0.muscache.com/im/pictures/311b7e4b-e68b-4f48-9e0e-6681f890e308.jpg?im_w=720" alt="Accommodation">
+            <div class="accommodation-info">
+                <div class="location">Gravatá, Brasil</div>
+                <div class="details">
+                    <div class="desc">
+                      <span>19km de distância</span>
+                      <span>5-10 de mai</span>
+                    </div>
+                    <div>
+                      <i class="fa-solid fa-star"></i>
+                      <span>5,0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="accommodation-card">
+            <div class="preferred-badge">🏆 Preferido dos hóspedes</div>
+            <div class="heart-icon">❤️</div>
+            <img src="https://a0.muscache.com/im/pictures/airflow/Hosting-1343741137887097075/original/8afbfc63-afbc-4c59-bafa-32779d0e7e4a.jpg?im_w=720" alt="Accommodation">
+            <div class="accommodation-info">
+                <div class="location">Penha, Brasil</div>
+                <div class="details">
+                    <div class="desc">
+                      <span>19km de distância</span>
+                      <span>5-10 de mai</span>
+                    </div>
+                    <div>
+                      <i class="fa-solid fa-star"></i>
+                      <span>5,0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="accommodation-card">
+            <div class="preferred-badge">🏆 Preferido dos hóspedes</div>
+            <div class="heart-icon">❤️</div>
+            <img src="https://a0.muscache.com/im/pictures/928b1af1-abae-4315-aeb1-eaa887747137.jpg?im_w=720" alt="Accommodation">
+            <div class="accommodation-info">
+                <div class="location">Praia Brava, Brasil</div>
+                <div class="details">
+                    <div class="desc">
+                      <span>19km de distância</span>
+                      <span>5-10 de mai</span>
+                    </div>
+                    <div>
+                      <i class="fa-solid fa-star"></i>
+                      <span>5,0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
